@@ -74,7 +74,16 @@ All contracts are deployed and verified on Mezo testnet:
 - **MUSD Token Contract:** https://explorer.test.mezo.org/address/0x118917a40FAF1CD7a13dB0Ef56C86De7973Ac503
 - **ProjectEscrow (Funds locked here):** https://explorer.test.mezo.org/address/0x355dE584F4E4a13c7a8587cF7E8a8C0237988035
 - **PayoutDistributor (Automated payouts):** https://explorer.test.mezo.org/address/0x26ab82a7b1A337246e83A2264b59AF2cA273E040
-- **View all transactions:** https://explorer.test.mezo.org/address/0x855bc3E892F22E8C9C99525799b885D5884471DD
+- **Deployer Address (All transactions):** https://explorer.test.mezo.org/address/0x855bc3E892F22E8C9C99525799b885D5884471DD
+
+### 💰 Example Payout Transaction
+
+See a real automated payout on Mezo testnet:
+- **Transaction Hash:** https://explorer.test.mezo.org/tx/0x96bef934dae0dddbeb09def6b6b8d409f7f8dd9242e2907e3928edc78425df16
+- **Amount:** 0.87 MUSD (based on 87/100 Source Agent score)
+- **From:** ProjectEscrow Contract
+- **To:** Developer Wallet
+- **Time:** Instant (< 1 hour from submission)
 
 ---
 
