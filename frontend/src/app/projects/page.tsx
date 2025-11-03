@@ -176,16 +176,8 @@ export default function ProjectsPage() {
               Browse open source projects and contribute to earn MUSD rewards
             </p>
           </div>
-          <Link href={isConnected ? "/projects/create" : "#"}>
-            <Button
-              size="lg"
-              onClick={(e) => {
-                if (!isConnected) {
-                  e.preventDefault();
-                  alert("Please connect your wallet to create a project");
-                }
-              }}
-            >
+          <Link href="/projects/create">
+            <Button size="lg">
               + Create Project
             </Button>
           </Link>
@@ -249,15 +241,8 @@ export default function ProjectsPage() {
             >
               Be the first to create a project and start building!
             </p>
-            <Link href={isConnected ? "/projects/create" : "#"}>
-              <Button
-                onClick={(e) => {
-                  if (!isConnected) {
-                    e.preventDefault();
-                    alert("Please connect your wallet to create a project");
-                  }
-                }}
-              >
+            <Link href="/projects/create">
+              <Button>
                 Create First Project
               </Button>
             </Link>
