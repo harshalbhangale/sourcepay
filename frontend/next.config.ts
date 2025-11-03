@@ -13,6 +13,8 @@ const nextConfig: NextConfig = {
   },
   webpack: (config, { dev }) => {
     config.externals.push("pino-pretty", "lokijs", "encoding");
+    
+    // Fix MetaMask SDK and React Native dependencies
     config.resolve.fallback = {
       ...config.resolve.fallback,
       fs: false,
@@ -20,12 +22,19 @@ const nextConfig: NextConfig = {
       tls: false,
       "node:crypto": false,
       "node:stream": false,
+      "@react-native-async-storage/async-storage": false,
+      "react-native": false,
+      "react-native-fs": false,
+      "react-native-webview": false,
     };
-    // Ignore node-specific modules
+    
+    // Ignore node-specific and React Native modules
     config.resolve.alias = {
       ...config.resolve.alias,
       "node:crypto": false,
       "node:stream": false,
+      "@react-native-async-storage/async-storage": false,
+      "react-native": false,
     };
     
     // Optimize for development performance
@@ -37,6 +46,12 @@ const nextConfig: NextConfig = {
         splitChunks: false,
       };
     }
+    
+    // Suppress warnings
+    config.ignoreWarnings = [
+      /async-storage/,
+      /react-native/,
+    ];
     
     return config;
   },
