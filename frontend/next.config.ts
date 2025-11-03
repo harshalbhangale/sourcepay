@@ -2,7 +2,16 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  webpack: (config) => {
+  // Performance optimizations to reduce CPU usage
+  swcMinify: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production",
+  },
+  // Reduce memory usage
+  experimental: {
+    optimizePackageImports: ["@radix-ui/react-slot", "lucide-react"],
+  },
+  webpack: (config, { dev }) => {
     config.externals.push("pino-pretty", "lokijs", "encoding");
     config.resolve.fallback = {
       ...config.resolve.fallback,
@@ -18,11 +27,18 @@ const nextConfig: NextConfig = {
       "node:crypto": false,
       "node:stream": false,
     };
+    
+    // Optimize for development performance
+    if (dev) {
+      config.optimization = {
+        ...config.optimization,
+        removeAvailableModules: false,
+        removeEmptyChunks: false,
+        splitChunks: false,
+      };
+    }
+    
     return config;
-  },
-  // Optimize for production
-  experimental: {
-    optimizePackageImports: ["@radix-ui/react-slot", "lucide-react"],
   },
 };
 
