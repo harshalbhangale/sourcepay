@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Built with Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org)
 
-**[Live Demo](https://sourcepay-demo.vercel.app)** • **[Video Demo](https://www.loom.com/share/9346a410a7df41eeb874117ae21e0519)** • **[Documentation](#-documentation)** • **[Contracts](#-deployed-contracts)**
+**[Live Demo](https://sourcepay-xi.vercel.app)** • **[Video Demo](https://www.loom.com/share/9346a410a7df41eeb874117ae21e0519)** • **[Documentation](#-documentation)** • **[Contracts](#-deployed-contracts)**
 
 ---
 
@@ -423,7 +423,7 @@ Full-stack software engineer at UK-based insurtech startup (recently raised £32
 ## 🔗 Links
 
 **Product:**
-- 🌐 [Live Demo](https://sourcepay-demo.vercel.app) - Try on Mezo testnet
+- 🌐 [Live Demo](https://sourcepay-xi.vercel.app) - Try on Mezo testnet
 - 📺 [Demo Video](https://www.loom.com/share/9346a410a7df41eeb874117ae21e0519) - 3-minute walkthrough
 - 📊 [Pitch Deck](#) - Hackathon presentation
 
@@ -474,7 +474,7 @@ Built for **Mezo - Build Your Bank Hackathon 2025**
 
 *Transforming Bitcoin into productive capital for developers worldwide*
 
-[Get Started](#-quick-start) • [Try Demo](https://sourcepay-demo.vercel.app) • [Join Community](#)
+[Get Started](#-quick-start) • [Try Demo](https://sourcepay-xi.vercel.app) • [Watch Video](https://www.loom.com/share/9346a410a7df41eeb874117ae21e0519)
 
 **SourcePay** - Where Code Quality Meets Instant Bitcoin-Backed Payments
 
