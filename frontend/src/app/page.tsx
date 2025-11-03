@@ -285,7 +285,7 @@ export default function Home() {
                 Explore Bounties
               </button>
             </Link>
-            <Link href={isConnected ? "/projects/create" : "#"}>
+            <Link href="/projects/create">
               <button
                 style={{
                   padding: "16px 32px",
@@ -297,12 +297,6 @@ export default function Home() {
                   borderRadius: "12px",
                   cursor: "pointer",
                   transition: "all 0.2s",
-                }}
-                onClick={(e) => {
-                  if (!isConnected) {
-                    e.preventDefault();
-                    alert("Please connect your wallet first");
-                  }
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.backgroundColor = "rgba(255,255,255,0.1)";
