@@ -1,0 +1,48 @@
+{
+  "name": "sourcepay",
+  "version": "1.0.0",
+  "description": "Automated bounties powered by MUSD on Mezo Network",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "contracts",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "echo Run 'bun run dev:backend' and 'bun run dev:frontend' in separate terminals",
+    "dev:frontend": "cd frontend && bun run dev",
+    "dev:backend": "cd backend && bun run dev",
+    "dev:contracts": "cd contracts && bun run node",
+    "build": "bun run build:shared && bun run build:backend && bun run build:frontend && bun run build:contracts",
+    "build:frontend": "cd frontend && bun run build",
+    "build:backend": "cd backend && bun run build",
+    "build:contracts": "cd contracts && bun run compile",
+    "build:shared": "cd shared && bun run build",
+    "test": "bun run test:backend && bun run test:contracts",
+    "test:backend": "cd backend && bun run test",
+    "test:contracts": "cd contracts && bun run test",
+    "clean": "powershell -ExecutionPolicy Bypass -File ./clean.ps1",
+    "clean:cmd": "clean.bat",
+    "reinstall": "bun run clean && bun install"
+  },
+  "keywords": [
+    "blockchain",
+    "bounty",
+    "musd",
+    "mezo",
+    "bitcoin",
+    "defi",
+    "open-source"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
+  },
+  "trustedDependencies": [
+    "protobufjs",
+    "unrs-resolver"
+  ]
+}

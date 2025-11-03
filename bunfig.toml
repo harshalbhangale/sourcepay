@@ -1,0 +1,13 @@
+# Bun configuration for DevQuest monorepo
+[install]
+# Use workspaces
+workspaces = ["frontend", "backend", "contracts", "shared"]
+
+# Prevent duplicate installations
+hoistDependencies = true
+
+# Cache directory
+cache = "node_modules/.cache/bun"
+
+[install.scopes]
+# Define scope mappings if needed

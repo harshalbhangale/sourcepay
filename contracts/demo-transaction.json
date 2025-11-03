@@ -1,0 +1,10 @@
+{
+  "transactionHash": "0x96bef934dae0dddbeb09def6b6b8d409f7f8dd9242e2907e3928edc78425df16",
+  "explorerUrl": "https://explorer.test.mezo.org/tx/0x96bef934dae0dddbeb09def6b6b8d409f7f8dd9242e2907e3928edc78425df16",
+  "from": "0x355dE584F4E4a13c7a8587cF7E8a8C0237988035",
+  "to": "0x742D35Cc6634C0532925A3B844bC9e7595f0bEB7",
+  "amount": "0.87 MUSD",
+  "score": 87,
+  "blockNumber": 8449608,
+  "timestamp": "2025-11-03T11:56:23.522Z"
+}

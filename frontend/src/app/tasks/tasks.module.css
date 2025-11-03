@@ -1,0 +1,405 @@
+/* Optimized styles for tasks page */
+
+.container {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.headerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logoBox {
+  width: 32px;
+  height: 32px;
+  background-color: #171717;
+  border-radius: 4px;
+}
+
+.logoText {
+  font-size: 20px;
+  font-weight: bold;
+  color: #171717;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navLink {
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navLinkActive {
+  color: #171717;
+  font-weight: 600;
+}
+
+.navLinkInactive {
+  color: #737373;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+.pageHeader {
+  margin-bottom: 40px;
+}
+
+.pageTitle {
+  font-size: 32px;
+  font-weight: bold;
+  color: #171717;
+  margin-bottom: 8px;
+}
+
+.pageSubtitle {
+  font-size: 16px;
+  color: #737373;
+}
+
+.statusIndicator {
+  padding: 16px 24px;
+  margin-bottom: 24px;
+  background-color: #eff6ff;
+  border: 2px solid #3b82f6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #3b82f6;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.statusText {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.filterButton {
+  padding: 8px 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #171717;
+  transition: all 0.2s;
+}
+
+.filterButton:hover {
+  border-color: #d4d4d4;
+}
+
+.filterButtonActive {
+  background-color: #171717;
+  color: #ffffff;
+}
+
+.tasksList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.taskCard {
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid;
+  border-radius: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.taskCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.taskCardOpen {
+  background: rgba(59, 130, 246, 0.05);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.taskCardAssigned {
+  background: rgba(245, 158, 11, 0.05);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.taskCardCompleted {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.taskHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.taskInfo {
+  flex: 1;
+}
+
+.taskTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.taskTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #171717;
+}
+
+.taskStatus {
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.taskProjectLink {
+  font-size: 14px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.taskDescription {
+  font-size: 14px;
+  color: #737373;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+.taskBounty {
+  text-align: right;
+  min-width: 120px;
+}
+
+.bountyLabel {
+  font-size: 12px;
+  color: #737373;
+  margin-bottom: 4px;
+}
+
+.bountyAmount {
+  font-size: 28px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bountyUnit {
+  font-size: 13px;
+  color: #737373;
+  font-weight: 600;
+}
+
+.taskFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.assigneeText {
+  font-size: 14px;
+  color: #737373;
+}
+
+.availableText {
+  font-size: 14px;
+  color: #16a34a;
+  font-weight: 500;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.modalContent {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.modalTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #171717;
+  margin-bottom: 8px;
+}
+
+.modalSubtitle {
+  font-size: 14px;
+  color: #737373;
+  margin-bottom: 24px;
+}
+
+.taskInfoBox {
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.formGroup {
+  margin-bottom: 24px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #171717;
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.helpText {
+  font-size: 12px;
+  color: #737373;
+  margin-top: 8px;
+}
+
+.tipsBox {
+  padding: 16px;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.tipsTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #171717;
+  margin-bottom: 8px;
+}
+
+.tipsList {
+  font-size: 13px;
+  color: #374151;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.modalActions {
+  display: flex;
+  gap: 12px;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+}
+
+.emptyIcon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.emptyTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #171717;
+  margin-bottom: 8px;
+}
+
+.emptyText {
+  font-size: 16px;
+  color: #737373;
+  margin-bottom: 24px;
+}
+
+.count {
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #737373;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
