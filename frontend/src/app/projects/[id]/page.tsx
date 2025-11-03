@@ -133,12 +133,12 @@ export default function ProjectDetailPage() {
   };
 
   const handleViewOnBlockchain = () => {
-    // Open Etherscan for the ProjectRegistry contract
+    // Open Mezo Explorer for the ProjectRegistry contract
     const contractAddress =
       process.env.NEXT_PUBLIC_PROJECT_REGISTRY_ADDRESS ||
-      "0x8df87a09900b4147Ad63804fAEC06919ed15c4A0";
-    const etherscanUrl = `https://sepolia.etherscan.io/address/${contractAddress}`;
-    window.open(etherscanUrl, "_blank");
+      "0x6E82D1F51652000907F1457030F2275F88cf87c3";
+    const mezoExplorerUrl = `https://explorer.test.mezo.org/address/${contractAddress}`;
+    window.open(mezoExplorerUrl, "_blank");
   };
 
   return (
