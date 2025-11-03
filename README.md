@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Built with Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org)
 
-**[Live Demo](https://sourcepay-demo.vercel.app)** • **[Documentation](#-documentation)** • **[Contracts](#-deployed-contracts)** • **[Hackathon](#-hackathon)**
+**[Live Demo](https://sourcepay-demo.vercel.app)** • **[Video Demo](https://www.loom.com/share/9346a410a7df41eeb874117ae21e0519)** • **[Documentation](#-documentation)** • **[Contracts](#-deployed-contracts)**
 
 ---
 
@@ -424,7 +424,7 @@ Full-stack software engineer at UK-based insurtech startup (recently raised £32
 
 **Product:**
 - 🌐 [Live Demo](https://sourcepay-demo.vercel.app) - Try on Mezo testnet
-- 📺 [Demo Video](#) - 3-minute walkthrough
+- 📺 [Demo Video](https://www.loom.com/share/9346a410a7df41eeb874117ae21e0519) - 3-minute walkthrough
 - 📊 [Pitch Deck](#) - Hackathon presentation
 
 **Blockchain:**
